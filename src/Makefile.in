@@ -103,7 +103,7 @@ am__v_lt_0 = --silent
 am__v_lt_1 = 
 hello_world_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(hello_world_CFLAGS) \
-	$(CFLAGS) $(hello_world_LDFLAGS) $(LDFLAGS) -o $@
+	$(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -281,7 +281,6 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 hello_world_SOURCES = main.c
 hello_world_CFLAGS = -std=gnu99
-hello_world_LDFLAGS = 
 all: all-am
 
 .SUFFIXES:
